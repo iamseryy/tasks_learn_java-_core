@@ -1,13 +1,11 @@
 package ru.task1;
 
-/**
- * Hello world!
- *
- */
+import ru.task1.controller.AppController;
+
+
 public class App 
 {
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+    public static void main( String[] args ) {
+        AppController.start();
     }
 }
