@@ -10,7 +10,7 @@ public class UserInterfaceImpl <T> implements UserInterface {
     private static Scanner scanner = new Scanner(System.in);
     private static UserInterfaceImpl instance;
 
-    public UserInterfaceImpl(){}
+    private UserInterfaceImpl(){}
 
     public static UserInterfaceImpl getInstance() {
         if (instance == null) {

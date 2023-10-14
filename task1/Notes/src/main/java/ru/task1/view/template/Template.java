@@ -8,5 +8,5 @@ import ru.task1.view.ui.impl.UserInterfaceImpl;
 public interface Template<T> {
     void output();
     NoteService noteService = new NoteServiceImpl();
-    UserInterface ui = new UserInterfaceImpl();
+    UserInterface ui = UserInterfaceImpl.getInstance();
 }
