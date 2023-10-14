@@ -16,9 +16,9 @@ public class FIleUtils {
     public static HashSet<Note> readCsv(File file, Charset charset){
         var notes = new HashSet<Note>();
         try (var bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(file), charset));){
-            var records = CSVFormat.EXCEL.withFirstRecordAsHeader().withDelimiter(';').parse(bufferedReader);
+            var records = CSVFormat.EXCEL.withDelimiter(';').parse(bufferedReader);
             records.forEach(record -> {
-                var format = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
+                var format = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
                 var calendar = Calendar.getInstance();
                 try {
                     calendar.setTime(format.parse(record.get(0)));
@@ -36,9 +36,9 @@ public class FIleUtils {
     }
 
     public static Boolean writeCsv(File file, Note note, Charset charset){
-        var dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
+        var dateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
         try (var fileWriter = new FileWriter(file, charset, file.exists() ? true : false);){
-            var csvPrinter = new CSVPrinter(fileWriter, CSVFormat.DEFAULT.withDelimiter(';').withHeader("date", "note"));
+            var csvPrinter = new CSVPrinter(fileWriter, CSVFormat.DEFAULT.withDelimiter(';'));
             csvPrinter.printRecord(dateFormat.format(note.date().getTime()), note.note());
             csvPrinter.flush();
         } catch (IOException e) {

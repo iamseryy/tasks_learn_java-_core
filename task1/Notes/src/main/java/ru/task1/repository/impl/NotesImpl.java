@@ -24,7 +24,9 @@ public class NotesImpl implements Notes {
 
     @Override
     public void add(Note note) {
+        notes.add(note);
         FIleUtils.writeCsv(new File(noteData), note, StandardCharsets.UTF_8);
+
     }
 
     @Override
