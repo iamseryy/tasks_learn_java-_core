@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public interface GeneralMenu {
-    String header = "\nPet registry\n";
+    String header = "\nNotes\n";
     List<MenuItem> generalMenuItems = Arrays.asList(
             new MenuItem[] {
                     new MenuItem("1 Print all notes", () -> new PrintAllNotesTemplate().output()),

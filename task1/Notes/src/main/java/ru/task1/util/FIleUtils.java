@@ -1,5 +1,4 @@
 package ru.task1.util;
-
 import org.apache.commons.csv.CSVPrinter;
 import ru.task1.config.AppConfig;
 import ru.task1.model.Note;

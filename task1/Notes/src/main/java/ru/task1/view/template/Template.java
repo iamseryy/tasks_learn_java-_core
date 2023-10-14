@@ -1,13 +1,9 @@
 package ru.task1.view.template;
 
-import org.gbtask.service.RegistryService;
-import org.gbtask.service.impl.RegistryServiceImpl;
-import org.gbtask.view.ui.UserInterface;
-import org.gbtask.view.ui.impl.UserInterfaceImpl;
+import ru.task1.service.NoteService;
+import ru.task1.service.impl.NoteServiceImpl;
 
 public interface Template<T> {
     void output();
-
-    RegistryService registryService = new RegistryServiceImpl();
-    UserInterface ui = UserInterfaceImpl.getInstance();
+    NoteService registryService = new NoteServiceImpl();
 }

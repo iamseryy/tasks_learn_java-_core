@@ -1,9 +1,8 @@
 package ru.task1.view.ui.impl;
 
-import org.gbtask.repository.impl.RegistryRepoImpl;
-import org.gbtask.view.ui.Parserable;
-import org.gbtask.view.ui.UserInterface;
 
+import ru.task1.view.ui.Parserable;
+import ru.task1.view.ui.UserInterface;
 import java.util.Optional;
 import java.util.Scanner;
 
