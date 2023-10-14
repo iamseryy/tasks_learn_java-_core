@@ -1,0 +1,10 @@
+package ru.task1.view.template.impl;
+
+import ru.task1.view.template.Template;
+
+public class AddNoteTemplate implements Template {
+    @Override
+    public void output() {
+
+    }
+}
