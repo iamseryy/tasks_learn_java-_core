@@ -1,0 +1,8 @@
+version: '3.9'
+
+services:
+  app:
+    image: openjdk:20-jdk
+    command: java -jar /app/notes/target Notes-ver_1.0.jar
+    volumes:
+      - ./:/app/notes
