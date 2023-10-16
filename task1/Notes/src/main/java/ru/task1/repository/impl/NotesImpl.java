@@ -25,7 +25,8 @@ public class NotesImpl implements Notes {
     @Override
     public void add(Note note) {
         notes.add(note);
-        FIleUtils.writeCsv(new File(noteData), note, StandardCharsets.UTF_8);
+        var fileUtils = new FIleUtils();
+        fileUtils.writeCsv(new File(noteData), note, StandardCharsets.UTF_8);
 
     }
 
@@ -35,6 +36,7 @@ public class NotesImpl implements Notes {
     }
 
     private static HashSet<Note> initCollection() {
-        return FIleUtils.readCsv(new File(noteData), StandardCharsets.UTF_8);
+        var fileUtils = new FIleUtils();
+        return fileUtils.readCsv(new File(noteData), StandardCharsets.UTF_8);
     }
 }

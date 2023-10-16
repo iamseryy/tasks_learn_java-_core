@@ -9,5 +9,5 @@ public interface Notes {
     void add(Note note);
     HashSet<Note> findAll();
 
-    String noteData = AppConfig.getProperty("notes");
+    String noteData = new AppConfig().getProperty("notes");
 }

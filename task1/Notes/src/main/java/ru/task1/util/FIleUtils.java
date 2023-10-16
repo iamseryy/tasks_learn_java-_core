@@ -28,9 +28,12 @@ public class FIleUtils {
                 notes.add(new Note(record.get(1), calendar));
             });
 
+        } catch (FileNotFoundException e) {
+
         } catch (IOException e) {
             AppConfig.LOGGER.log(Level.SEVERE, e.toString(), e);
         }
+
 
         return notes;
     }
@@ -48,4 +51,15 @@ public class FIleUtils {
 
         return true;
     }
+
+    public InputStream getFileFromResourceAsStream(String fileName) {
+        var classLoader = getClass().getClassLoader();
+        var inputStream = classLoader.getResourceAsStream(fileName);
+        if (inputStream == null) {
+            throw new IllegalArgumentException("file not found! " + fileName);
+        } else {
+            return inputStream;
+        }
+    }
+
 }
