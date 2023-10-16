@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="RU"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-20\bin"/>
-    <property name="sun.java.command" value="C:\Users\s_perminov\AppData\Local\Temp\surefire12773965343926931406\surefirebooter-20231016154959369_3.jar C:\Users\s_perminov\AppData\Local\Temp\surefire12773965343926931406 2023-10-16T15-49-59_272-jvmRun1 surefire-20231016154959369_1tmp surefire_0-20231016154959369_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\s_perminov\AppData\Local\Temp\surefire8314064266008819675\surefirebooter-20231016161017986_3.jar C:\Users\s_perminov\AppData\Local\Temp\surefire8314064266008819675 2023-10-16T16-10-17_893-jvmRun1 surefire-20231016161017986_1tmp surefire_0-20231016161017986_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="D:\Learning\gb\070_java_core\seminars\tasks\tasks_learn_java_core\task1\Notes\target\test-classes;D:\Learning\gb\070_java_core\seminars\tasks\tasks_learn_java_core\task1\Notes\target\classes;C:\Users\s_perminov\.m2\repository\org\apache\commons\commons-csv\1.10.0\commons-csv-1.10.0.jar;C:\Users\s_perminov\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\s_perminov\AppData\Local\Temp\surefire12773965343926931406\surefirebooter-20231016154959369_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\s_perminov\AppData\Local\Temp\surefire8314064266008819675\surefirebooter-20231016161017986_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="20+36-2344"/>

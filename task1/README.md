@@ -5,9 +5,25 @@
 Введите заметку: Hello, world!
 Дозапись в файл: 16.07.2023 -> Hello, world
 
-### Решение
-Создано приложение Notes - 
+### Решение:
+Создано приложение Notes - https://github.com/iamseryy/tasks_learn_java_core/tree/task1/task1/Notes
 
 * Скомпилируйте и запустите посредством CLI
+### Решение:
+
+* mvn clean install
+
+![](img/img1.png)
+
+![](img/img2.png)
+
+* java -jar Notes-ver_1.0.jar
+
+![](img/img3.png)
+
 
 2. (доп).Создать два Docker-образа. Один должен компилировать Java-проект обратно в папку на компьютере пользователя, а второй забирать скомпилированные классы и исполнять их. Пример листинга для docker-compose приведен в презентации семинара
+
+### Решение:
+* docker-compose-class.yml
+*  docker-compose-exec.yml
