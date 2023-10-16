@@ -1,8 +1,8 @@
 version: '3.9'
 
 services:
-  app:
-    image: openjdk:20-jdk
+  mvn:
+    image: maven:latest
     command: mvn clean install
     volumes:
-      - ./:/app/notes
+      - I:\gb\070_Java_Core\seminars\tasks\tasks_learn_java_core\task1\Notes:/app
