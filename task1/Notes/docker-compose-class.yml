@@ -3,6 +3,6 @@ version: '3.9'
 services:
   app:
     image: openjdk:20-jdk
-    command: mvn clean install
+    command: mvn -f /app/notes/pom.xml clean install
     volumes:
       - ./:/app/notes
