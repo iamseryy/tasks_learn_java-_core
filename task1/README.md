@@ -26,4 +26,9 @@
 
 ### Решение:
 * docker-compose-class.yml
+
+![](img/img4.png)
+
 *  docker-compose-exec.yml
+
+![](img/img5.png)
