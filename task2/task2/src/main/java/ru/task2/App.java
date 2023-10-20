@@ -1,6 +1,8 @@
 package ru.task2;
 
 import java.util.Arrays;
+import java.util.Random;
+import java.util.stream.IntStream;
 
 public class App
 {
@@ -8,8 +10,7 @@ public class App
     {
         // 1. Написать метод, возвращающий количество чётных элементов массива.
         // Пример: countEvens([2, 1, 2, 3, 4]) → 3 countEvens([2, 2, 0]) → 3 countEvens([1, 3, 5]) → 0
-        //var numbers = IntStream.generate(() -> new Random().nextInt(100)).limit(20).toArray();
-        var numbers = new int[]{1,3,44,5,1,0,44,55};
+        var numbers = IntStream.generate(() -> new Random().nextInt(100)).limit(20).toArray();
         System.out.println("1. countEvens(" + Arrays.toString(numbers) + ") -> " + countEvens(numbers));
 
         //2. Написать функцию, возвращающую разницу между самым большим и самым маленьким элементами переданного не пустого массива.
