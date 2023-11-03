@@ -1,13 +1,10 @@
 package org.task5;
 
-import jdk.swing.interop.SwingInterOpUtils;
-
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-public class App
-{
+public class App{
     public static void main( String[] args ){
         var students = new ArrayList<>(List.of(
                 new Student("Student1", new ArrayList<>(List.of(4.0,5.0,3.0,4.0,4.0,5.0)), Specialty.CHEMISTRY),
